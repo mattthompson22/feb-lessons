@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+    margin: auto;
+    width: 80%;
+}
+
+#row1 {
+    width: 100%;
+    height: 100px;
+    background-color:#F5C6D6;
+    border: 5px white solid;
+}
+
+
+.row2 {
+    width: 25%;
+    height: 100px;
+    background-color:#EE2E84;
+    border: 5px white solid;
+    display: inline-block;
+}

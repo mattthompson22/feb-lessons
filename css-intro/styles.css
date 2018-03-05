@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+}
+.wrapper {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.row {
+    height: 50px;
+}
+
+.col {
+    height: 100%;
+    display: inline-block;
+    border: 3px solid white;
+}
+
+.pink {
+    background-color: pink;
+    width: 100%;
+}
+
+.hot-pink {
+    background-color: hotpink;
+    width: 25%;
+}
+
+.blue {
+    background-color: blue;
+    width: 50%;
+}
+
+.green {
+    background-color: green;
+    width: 75%;
+}
+
+.orange {
+    background-color: orangered;
+    width: 25%;
+}
