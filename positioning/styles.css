@@ -1,0 +1,86 @@
+ /* The four positions: static, relative, absolute, fixed */
+
+ /* absolute positioning works relative to the nearest POSITIONED parent */
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     /* font-size: 0; */
+ }
+
+ body {
+     /* height: 100vh; */
+ }
+
+ /* 
+ .parent {
+     height: 300px;
+     width: 200px;
+     background-color: lightsalmon;
+     position: relative;
+ }
+
+ .child {
+     left: 50%;
+     height: 100px;
+     width: 100px;
+     border: 1px solid black;
+     display: inline-block;
+     background-color: lightseagreen;
+     position: absolute;
+ }
+
+ .grand-child {
+     background-color: white;
+     height: 50px;
+     width: 50px;
+     position: absolute;
+ }
+ .special{
+     background-color: red;
+     right: 0;
+ } */
+
+ nav,
+ footer {
+     height: 10vh;
+     border: 1px solid black;
+ }
+ nav{
+     width: 100%;
+     position: fixed;
+ }
+
+ section {
+     height: 150vh;
+     overflow: scroll;
+ }
+
+ section div {
+     position: relative;
+     top: 200px;
+ }
+
+ form {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%);
+ }
+
+ form * {
+     display: block;
+     text-align: center;
+ }
+
+ form button {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ footer{
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+ }
