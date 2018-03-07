@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Intro</title>
+</head>
+
+<body>
+    <form id="submit" name="login">
+        <input id="firstName"name="firstName" type="text" placeholder="Enter First Name">
+        <h3>Allergies</h3>
+        <label for="peanuts">Peanuts:
+            <input name="peanuts" id="peanuts" type="checkbox">
+        </label>
+        Pollen/Dust:
+        <label for="pollen">Pollen:
+            <input name="pollen" id="pollen" type="checkbox">
+        </label>
+        <label for="wheat">Wheat:
+            <input name="wheat" id="wheat" type="checkbox">
+        </label>
+        <h3>Age Range</h3>
+        <!-- radio -->
+        <label for="youth">0-17
+            <input name="age-range" id="youth" type="radio">
+        </label>
+        <label for="mid">18-35
+            <input name="age-range" id="mid" type="radio">
+        </label>
+        <label for="wise">36- dead
+            <input name="age-range" id="wise" type="radio">
+        </label>
+        <!-- select -->
+        <h3>Favorite Color? (Used for internal purposes)</h3>
+        <select name="color" id="color" value="none">
+            <option value="none">Pick a Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="grey">Grey</option>
+            <option value="pink">Pink</option>
+        </select>
+        <button>Submit</button>
+        <p id="output"></p>
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>
