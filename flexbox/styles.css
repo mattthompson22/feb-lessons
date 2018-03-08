@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.newParent {
+    
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: firebrick;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.child {
+    height: 50px;
+    width: 100px;
+}
+
+/* .aa {
+    flex-grow: 1;
+}
+.bb {
+    flex-grow: 5;
+} */
