@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: .15;
+    background-color: #ffd40e;
+}
+
+h1 {
+    padding-left: 12px;
+    font-size: 16px;
+    color: #e81b1f;
+}
+
+.banner {
+    flex: .35;
+    background-color: #e81b1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    background-image: url(https://coursework.vschool.io/content/images/2015/07/luigi.png);
+    height: 95%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;  
+}
+
+.main {
+    flex: .35;
+}
+
+footer {
+    flex: .15;
+}
