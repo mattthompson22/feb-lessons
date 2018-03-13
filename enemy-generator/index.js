@@ -12,8 +12,8 @@ function getRandomType() {
     return enemyTypes[randIndex];
 }
 
-Enemy.prototype.genHitPoints = function () {
-    switch (this.type) {
+Enemy.prototype.genHitPoints = function (type) {
+    switch (type) {
         case "Ancient Dragon":
             return Math.floor(Math.random() * 21) + 80;
         case "Prowler":
