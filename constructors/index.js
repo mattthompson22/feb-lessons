@@ -97,4 +97,29 @@ var amy = new User("Amy", "amy@amy.com", "amy123");
 amy.changePassword("new pwd");
 console.log(amy);
 
+//constructors are FUNCTIONS
+// they generate new INSTANCES of objects
+
+// declaring / defining constructors
+
+function User(name){
+    this.name = name; 
+}
+
+// var User = function(name){
+//     this.name = name;
+// }
+
+// instantiating a constructor:
+
+var catherine = new User("Catherine");
+
+//prototypes:
+
+User.prototype.speak = function(){
+    console.log("My name is " + this.name);
+}
+
+catherine.speak();
+
 
