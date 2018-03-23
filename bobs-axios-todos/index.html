@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form id="todo-form">
+        <input name="title" type="text" placeholder="title"><br>
+        <input name="description" type="text" placeholder="description"><br>
+        <input name="price" type="number" placeholder="price"><br>
+        <button>Add Todo</button>
+    </form>
+
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

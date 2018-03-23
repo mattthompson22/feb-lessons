@@ -1,0 +1,22 @@
+.todo-list > li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.todo-list > li > button {
+    background-color: firebrick;
+    color: whitesmoke;
+    border: none;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.todo-list > li > button:hover {
+    cursor: pointer;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+    font-style: italic;
+}

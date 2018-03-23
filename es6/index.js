@@ -135,6 +135,8 @@ function exponent(x, y = 2) {
     return Math.pow(x, y);
 }
 
+// exponent(3);
+
 // in es5:
 function exponent(x, y) {
     if (y === undefined) {
@@ -155,3 +157,13 @@ function unknownArgs(...args) {
 }
 
 unknownArgs(1, 4, 6, "test", true, false);
+
+//object literals
+
+let name = "Ben";
+let age = 29;
+
+let person = {
+    name,
+    age
+}
