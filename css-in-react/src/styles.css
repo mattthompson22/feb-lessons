@@ -1,0 +1,12 @@
+/* .wrapper {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.daytime {
+    color: red;
+}
+
+.nighttime {
+    color: darkblue;
+}
