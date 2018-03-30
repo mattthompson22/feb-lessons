@@ -11,7 +11,6 @@ function App() {
     return (
         <div>
             <Component {...blogPost1}></Component>
-
         </div>
     )
 }

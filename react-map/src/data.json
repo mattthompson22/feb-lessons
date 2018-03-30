@@ -1,0 +1,36 @@
+[{
+        "name": "Mighty Morphin' Power Rangers",
+        "age": 24,
+        "pets": ["Fido", "Mr. Whiskerson"]
+    },
+    {
+        "name": "Batman",
+        "age": 45,
+        "pets": ["Fido", "Mr. Whiskerson"]
+    },
+    {
+        "name": "Wonder Woman",
+        "age": 300,
+        "pets": ["Fido", "Mr. Whiskerson"]
+    },
+    {
+        "name": "Cat Woman",
+        "age": 26,
+        "pets": ["Fido", "Mr. Whiskerson"]
+    },
+    {
+        "name": "Superman",
+        "age": 30,
+        "pets": ["Fido", "Mr. Whiskerson"]
+    },
+    {
+        "name": "John",
+        "age": 21,
+        "pets": ["Fido", "Mr. Whiskerson"]
+    },
+    {
+        "name": "Quasimodo",
+        "age": 530,
+        "pets": ["Fido", "Mr. Whiskerson"]
+    }
+]

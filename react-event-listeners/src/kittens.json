@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Mr. Wiskersons",
+        "type": "Ragdoll",
+        "age": 2,
+        "img": "https://i.pinimg.com/originals/ba/bd/62/babd62aed1f500d166c5d7e522fa5c5d.jpg"
+    },
+    {
+        "name": "Mrs. Wiskersons",
+        "type": "Ragdoll",
+        "age": 6,
+        "img": "http://www.rockstarragdolls.com/sitebuildercontent/sitebuilderpictures/5chocsepia.jpg"
+    },
+    {
+        "name": "Fluffykins",
+        "type": "Siamese",
+        "age": 3,
+        "img": "http://mittenkittens.net/wp-content/uploads/2014/08/20171213_112405_2.jpg"
+    }
+]
