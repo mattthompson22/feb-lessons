@@ -2,9 +2,14 @@ import React from "react";
 import Form from "./Form/";
 
 function App() {
+    const personToEdit = {
+        firstName: "Ilian",
+        lastName: "Johnson",
+        email: "theilliest@imsoill.com"
+    }
     return (
         <div>
-            <Form></Form>
+            <Form {...personToEdit}></Form>
         </div>
     )
 }
