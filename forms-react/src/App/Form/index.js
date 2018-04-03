@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import List from "./List/";
+
+import FormDisplay from "./FormDisplay";
 
 class Form extends Component {
     constructor(props) {
         super(props);
         this.initialState = {
             inputs: {
-                //we can use props to set initial state if we want to:
-                firstName: props.firstName || "",
-                lastName: props.lastName || "",
-                email: props.email || ""
+                firstName: "",
+                lastName: "",
+                email: ""
             },
             people: []
         }
@@ -46,17 +46,13 @@ class Form extends Component {
     }
 
     render() {
-        const { firstName, lastName, email } = this.state.inputs;
-        const { people } = this.state;
+        const props = {
+            handleSubmit: this.handleSubmit,
+            handleChange: this.handleChange,
+            ...this.state
+        }
         return (
-            <form onSubmit={this.handleSubmit}>
-                <input name="firstName" onChange={this.handleChange} value={firstName} type="text" placeholder="Enter First Name" />
-                <input name="lastName" onChange={this.handleChange} value={lastName} type="text" placeholder="Enter Last Name" />
-                <input name="email" onChange={this.handleChange} value={email} type="email" placeholder="@Email" />
-                <button>Submit</button>
-                {/* render a list component, pass into it via props this.state.people, map through each item, and render a person component containing individual info */}
-                <List people={people}></List>
-            </form>
+            <FormDisplay {...props}></FormDisplay>
         )
     }
 }

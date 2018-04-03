@@ -1,10 +1,10 @@
 import React from "react";
-import Form from "./Form/";
+import Counter from "./Counter/";
 
-function App() {
+function App(){
     return (
         <div>
-            <Form ></Form>
+            <Counter></Counter>
         </div>
     )
 }
