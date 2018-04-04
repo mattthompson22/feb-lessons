@@ -1,18 +1,26 @@
 import React from "react";
 import Component from "./Component/";
 
-function App() {
-    const blogPost1 = {
-        title: "test",
-        body: "lorem ipsum",
-        postClass: "red"
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            blogPost1: {
+                title: "1",
+                body: "2",
+                postClass: "blah"
+            }
+        }
     }
 
-    return (
-        <div>
-            <Component {...blogPost1}></Component>
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                <Component blogPost={this.state.blogPost1} />
+            </div>
+        )
+    }
+    
 }
 
 export default App;

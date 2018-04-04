@@ -1,10 +1,10 @@
 import React from "react";
 import Counter from "./Counter/";
 
-function App() {
+function App(props) {
     return (
         <div>
-            <Counter></Counter>
+            {props.name}
         </div>
     )
 }

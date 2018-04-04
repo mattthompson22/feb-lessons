@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 70px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+nav.nav > a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav.nav > a:hover {
+    background-color: white;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+footer {
+    background-color: #464646;
+    color: whitesmoke;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
