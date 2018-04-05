@@ -11,6 +11,8 @@ const reducer = (state = initialState, action) => {
             return {
                 counter: state.counter + action.amount
             }
+        case "RESET":
+            return initialState;
         default:
             return state;
     }
@@ -21,6 +23,9 @@ const action = {
     type: "INCREMENT",
     amount: 1
 }
+const reset = {
+    type: "RESET",
+}
 
 //create store
 const store = redux.createStore(reducer);
@@ -30,9 +35,7 @@ store.subscribe(() => console.log(store.getState()));
 store.dispatch(action);
 store.dispatch(action);
 store.dispatch(action);
-store.dispatch(action);
-store.dispatch(action);
-store.dispatch(action);
-store.dispatch(action);
+store.dispatch(reset);
+
 
 
