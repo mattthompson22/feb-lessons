@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addCat } from "../../redux/cats.js";
 
-
 class Form extends Component {
     constructor(props) {
         super(props);

@@ -1,8 +1,9 @@
 import { createStore, combineReducers } from "redux";
 
-import catReducer from "./cats";
+import catsReducer from "./cats";
 
-const store = createStore(combineReducers({ cats: catReducer }));
+const store = createStore(combineReducers({ cats: catsReducer }));
+
 store.subscribe(() => {
     console.log(store.getState());
 })
