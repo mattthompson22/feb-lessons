@@ -36,7 +36,7 @@ class Form extends Component {
     render() {
         const { imgUrl, caption } = this.state.inputs;
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="post-form" onSubmit={this.handleSubmit}>
                 <input onChange={this.handleChange} name="imgUrl" value={imgUrl} type="text" placeholder="Image URL" />
                 <input onChange={this.handleChange} name="caption" value={caption} type="text" placeholder="Enter Caption" />
                 <button>Submit</button>

@@ -5,7 +5,7 @@ import EditForm from "./EditForm/";
 function Item(props) {
     const { imgUrl, caption, removeCat, index } = props;
     return (
-        <div>
+        <div className="item-wrapper">
             <img style={{ height: "100px", width: "auto" }} src={imgUrl} alt="" />
             <p>{caption}</p>
             <button onClick={() => removeCat(index)}>X</button>

@@ -6,7 +6,7 @@ import Item from "./Item/";
 function List(props) {
     const catComponents = props.data.map((cat, i) => <Item key={cat.imgUrl + i}{...cat} removeCat={props.removeCat} index={i}></Item>)
     return (
-        <div>
+        <div className="list-wrapper">
             {catComponents}
         </div>
     )

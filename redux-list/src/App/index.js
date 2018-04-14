@@ -5,8 +5,9 @@ import List from "./List/";
 
 function App(props) {
     return (
-        <div>
+        <div className="app-wrapper">
             <Form></Form>
+            
             <List></List>
         </div>
     )
