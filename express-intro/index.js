@@ -12,7 +12,18 @@ app.use(bodyParser.json());
 // routes
 app.route("/cats")
     .get((req, res) => {
-        res.status(200).send(cats);
+        const { query } = req;
+        //check each cat in the array
+        //filter it by matching properties/values
+        const queriedCats = cats.filter(cat => {
+            for (let key in query) {
+                if (!cat.hasOwnProperty(key) || String(cat[key]).toLowerCase() !== query[key].toLowerCase()) {
+                    return false;
+                }
+            }
+            return true;
+        })
+        res.status(200).send(queriedCats);
     })
     .post((req, res) => {
         //give data in request body an id
