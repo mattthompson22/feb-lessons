@@ -7,7 +7,7 @@ const CatModel = require("../models/cats.js");
 //actual routes go here
 catRouter.route("/")
     .get((req, res) => {
-        CatModel.find({age: {$lte: 5, $gte: 2}}, (err, foundCats) => {
+        CatModel.find(req.query, (err, foundCats) => {
             if (err) return res.send(err);
             res.status(200).send(foundCats);
         })
