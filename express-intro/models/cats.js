@@ -15,6 +15,11 @@ const catSchema = new Schema({
     adoptionStatus: {
         type: String,
         default: "not adopted"
+    },
+    agencyId: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: "agencies"
     }
 })
 
